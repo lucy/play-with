@@ -2,5 +2,8 @@
   "actionName": {
     "message": "abspielen mit...",
     "description": "Action name for tooltips"
+  },
+  "contextMenuItem": {
+    "message": "abspi&elen mit..."
   }
 }

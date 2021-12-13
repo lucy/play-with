@@ -16,7 +16,7 @@ function invoke(info, tab) {
  */
 browser.contextMenus.create({
   id: "play-with",
-  title: browser.i18n.getMessage("actionName"),
+  title: browser.i18n.getMessage("contextMenuItem"),
   contexts: ["link", "video"]
 });
 
