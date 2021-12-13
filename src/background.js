@@ -33,3 +33,14 @@ browser.browserAction.onClicked.addListener((tab) => {
 browser.contextMenus.onClicked.addListener((info, tab) => {
   invoke(info, tab);
 });
+
+/*
+ * Register listener for commands.
+ */
+browser.commands.onCommand.addListener((command) => {
+  browser.tabs.query({currentWindow: true, active: true}).then((tabs) => {
+    if (tabs.length !== 0) {
+      invoke(null, tabs[0]);
+    }
+  });
+});

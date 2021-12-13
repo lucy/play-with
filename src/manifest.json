@@ -14,6 +14,12 @@
     "js": ["play.js"]
   }],
 
+  "commands": {
+    "play": {
+      "description": "__MSG_actionName__"
+    }
+  },
+
   "permissions": ["activeTab", "contextMenus", "storage"],
 
   "browser_action": {
